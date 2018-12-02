@@ -32,6 +32,7 @@ RUN bundle install
 
 RUN npm -g install 
 RUN npm -g install gulp
+RUN npm -g install gulp-image-resize
 
 # Set default locale for the environment
 ENV LC_ALL C.UTF-8
