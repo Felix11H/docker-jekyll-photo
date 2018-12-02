@@ -5,7 +5,7 @@ MAINTAINER Felix Z. Hoffmann <felix11h.dev@gmail.com>
 
 USER root
 
-RUN yum -y install git gcc gcc-c++ make wget curl
+RUN yum -y install git gcc gcc-c++ make wget curl ImageMagick
 
 # install Ruby 2.4.2
 RUN yum -y groupinstall "Development Tools"
