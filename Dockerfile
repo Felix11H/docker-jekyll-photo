@@ -26,8 +26,8 @@ RUN gem install bundler --force
 RUN curl -sL https://rpm.nodesource.com/setup | bash -
 RUN yum -y install nodejs
 
-RUN git clone https://github.com/Felix11H/docker-jekyll-photo spec
-WORKDIR spec
+RUN git clone https://github.com/Felix11H/docker-jekyll-photo nspec
+WORKDIR nspec
 RUN bundle install
 
 RUN npm install
