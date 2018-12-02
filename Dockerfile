@@ -23,14 +23,14 @@ RUN gem update
 
 RUN gem install bundler --force
 
-RUN curl -sL https://rpm.nodesource.com/setup | bash -
+RUN curl -sL https://rpm.nodesource.com/setup_8.x | bash -
 RUN yum -y install nodejs
 
 RUN git clone https://github.com/Felix11H/docker-jekyll-photo nspec
 WORKDIR nspec
 RUN bundle install
 
-RUN npm install
+RUN npm -g install
 
 # Set default locale for the environment
 ENV LC_ALL C.UTF-8
