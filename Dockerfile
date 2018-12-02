@@ -30,15 +30,16 @@ RUN git clone https://github.com/Felix11H/docker-jekyll-photo nspec
 WORKDIR nspec
 RUN bundle install
 
-RUN npm -g install
+RUN npm -g install 
+RUN npm -g install gulp
 
 # Set default locale for the environment
 ENV LC_ALL C.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 
-RUN useradd -ms /bin/bash docker
-USER docker
+# RUN useradd -ms /bin/bash docker
+# USER docker
 
 # RUN gem install jekyll-feed -v '0.9.3'
 # RUN gem install jekyll-seo-tag -v '2.4.0'
